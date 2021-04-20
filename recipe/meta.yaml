@@ -1,5 +1,5 @@
 {% set name = "yaqd-wright" %}
-{% set version = "2021.1.0" %}
+{% set version = "2021.4.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yaqd-wright-{{ version }}.tar.gz
-  sha256: 2fc951c787b89d508c02a33f0d26b599fc953dbba60b58a71000d9ff0db3df2f
+  sha256: 637f7518de98ea49e5815bf46f8f2e565c3d0276716d92d29d038bc67135477d
 
 build:
   number: 0
