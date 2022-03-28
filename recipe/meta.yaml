@@ -18,6 +18,7 @@ build:
     - yaqd-wright-filter-wheel = yaqd_wright._wright_filter_wheel:WrightFilterWheel.main
     - yaqd-wright-ingaas = yaqd_wright._wright_ingaas:WrightInGaAs.main
     - yaqd-wright-wl-motor = yaqd_wright._wright_wl_motor:WrightWlMotor.main
+    - yaqd-ndinterp = yaqd_wright._ndinterp:NDInterp.main
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -40,6 +41,7 @@ test:
     - yaqd-wright-filter-wheel --help
     - yaqd-wright-ingaas --help
     - yaqd-wright-wl-motor --help
+    - yaqd-ndinterp --help
   requires:
     - pip
 
