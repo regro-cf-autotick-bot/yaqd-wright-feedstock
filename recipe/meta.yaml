@@ -41,7 +41,7 @@ test:
   commands:
     - pip check
     - yaqd-wright-aerotech --help
-    - yaqd-wright-filter-wheel --help
+    - yaqd-wright-stepper-box --help
     - yaqd-wright-ingaas --help
     - yaqd-wright-wl-motor --help
     - yaqd-ndinterp --help
