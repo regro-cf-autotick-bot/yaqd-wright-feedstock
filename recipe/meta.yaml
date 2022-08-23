@@ -11,7 +11,7 @@ source:
   sha256: 2a55d9ec2e29402263e9b17145da51c2439221e56b6614b3aaa52d15f2ba8de8
 
 build:
-  number:1
+  number: 1
   noarch: python
   entry_points:
     - yaqd-wright-aerotech = yaqd_wright._wright_aerotech:WrightAerotech.main
