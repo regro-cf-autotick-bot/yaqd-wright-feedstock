@@ -1,5 +1,5 @@
 {% set name = "yaqd-wright" %}
-{% set version = "2022.3.0" %}
+{% set version = "2022.8.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yaqd-wright-{{ version }}.tar.gz
-  sha256: 2a55d9ec2e29402263e9b17145da51c2439221e56b6614b3aaa52d15f2ba8de8
+  sha256: 22ad55246e21aee8763e0cf1ae469970b248bcbfeeabbaf9b3412281a7d20065
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - yaqd-wright-aerotech = yaqd_wright._wright_aerotech:WrightAerotech.main
@@ -41,7 +41,7 @@ test:
   commands:
     - pip check
     - yaqd-wright-aerotech --help
-    - yaqd-wright-filter-wheel --help
+    - yaqd-wright-stepper-box --help
     - yaqd-wright-ingaas --help
     - yaqd-wright-wl-motor --help
     - yaqd-ndinterp --help
