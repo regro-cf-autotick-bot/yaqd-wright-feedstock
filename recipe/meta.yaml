@@ -11,11 +11,11 @@ source:
   sha256: 2a55d9ec2e29402263e9b17145da51c2439221e56b6614b3aaa52d15f2ba8de8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - yaqd-wright-aerotech = yaqd_wright._wright_aerotech:WrightAerotech.main
-    - yaqd-wright-filter-wheel = yaqd_wright._wright_filter_wheel:WrightFilterWheel.main
+    - yaqd-wright-stepper-box = yaqd_wright._wright_stepper_box:WrightStepperBox.main
     - yaqd-wright-ingaas = yaqd_wright._wright_ingaas:WrightInGaAs.main
     - yaqd-wright-wl-motor = yaqd_wright._wright_wl_motor:WrightWlMotor.main
     - yaqd-ndinterp = yaqd_wright._ndinterp:NDInterp.main
