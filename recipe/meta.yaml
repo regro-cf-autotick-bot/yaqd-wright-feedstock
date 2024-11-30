@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yaqd-wright-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/yaqd-wright-{{ version }}.tar.gz
   sha256: 22ad55246e21aee8763e0cf1ae469970b248bcbfeeabbaf9b3412281a7d20065
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - yaqd-wright-aerotech = yaqd_wright._wright_aerotech:WrightAerotech.main
@@ -25,11 +25,11 @@ requirements:
   host:
     - pip
     - flit
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - numpy
     - pyserial
-    - python >=3.7
+    - python >={{ python_min }}
     - yaqd-core >=2020.06.3
     - yaqc
     - wrighttools
@@ -47,6 +47,7 @@ test:
     - yaqd-ndinterp --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://yaq.fyi
